@@ -1,0 +1,34 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#e00020;
+    background-size: 20%;
+    z-index: 99;
+    transition: opacity;
+    line-height: 5rem;
+}
+
+.preloader img {
+    width: 18rem;
+}
+
+.preloader h1 {
+    color: white;
+}
+
+@keyframes fade {
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+}
