@@ -1,0 +1,12 @@
+table, th, td {
+    border: black 1px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
+}
+
+td {
+    width: 7rem;
+}
