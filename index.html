@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
     <title>Web Development</title>
 </head>
 <body onload="loadfun()">
@@ -14,24 +16,34 @@
     <img src="./assets/images/logo.svg" alt="VIVES logo">
     <h1>WEB DEVELOPMENT</h1>
 </div>
+<div id="particles-js"></div>
 <nav>
     <ul>
-        <li>JM</li>
+        <li><strong>JM</strong></li>
         <li><a href="">Github</a></li>
         <li><a href="">Toledo</a></li>
     </ul>
 </nav>
-<h1>Web Development I</h1>
-<h2><a href="./labo_3/index.html">Labo 3</a></h2>
-<script defer>
-    const load = document.querySelector(".preloader");
-    function loadfun() {
-        load.style.animation = "fade 0.2s linear";
-        load.style.animationDelay = "1.8s";
-        setTimeout( () => {
-            load.style.display = "none";
-        }, 2000)
-    }
-</script>
+<main>
+    <section>
+    <div class="left">
+        <h1 class="labo-title">Labo</h1>
+        <div class="controls">
+            <p class="control-prev" onclick="prevLabo()">PREV</p>
+            <span/>
+            <p class="control-next" onclick="nextLabo()">NEXT</p>
+        </div>
+    </div>
+    <div class="right">
+        <div>
+            <h1 class="labo-number"></h1>
+            <p class="labo-text">
+            </p>
+        </div>
+        <a class="labo-link">Open Labo</a>
+    </div>
+    </section>
+</main>
+    <script src="assets/js/main.js"/>
 </body>
 </html>
