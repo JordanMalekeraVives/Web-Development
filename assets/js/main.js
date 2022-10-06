@@ -18,7 +18,7 @@ const labos = [
     {
         number: 4,
         link: "./labo_4/index.html",
-        color: "red"
+        color: "#e00020"
     },
     {
         number: 5,
@@ -33,14 +33,17 @@ const laboText = document.querySelector(".labo-text");
 const laboLink = document.querySelector(".labo-link");
 const controlPrev = document.querySelector(".control-prev");
 const controlNext = document.querySelector(".control-next");
+const background = document.querySelector("#particles-js")
 
 const animateLabo = () => {
     laboNumber.style.animation = "fadelabo 0.4s linear";
     laboText.style.animation = "fadelabo 0.4s linear";
+    background.style.animation = "fadecolor 0.4s linear";
 
     setTimeout(() => {
         laboNumber.style.animation = "";
         laboText.style.animation = "";
+        background.style.animation = "";
     }, 400)
 }
 
@@ -57,6 +60,7 @@ const setupLabo = () => {
         }
         laboText.innerText = "This is the contents and open projects of labo " + labos[i].number.toString()
         laboLink.setAttribute("href", labos[i].link);
+        background.style.backgroundColor = labos[i].color;
     }, 200)
 }
 setupLabo();
