@@ -89,7 +89,11 @@ section::-webkit-scrollbar {
 
 .labo-title {
     align-self: center;
-    font-size: 4rem;
+    font-size: 5rem;
+}
+
+.labo-number {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .labo-text {
