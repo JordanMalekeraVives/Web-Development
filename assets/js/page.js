@@ -15,7 +15,7 @@ const labos = [
         link: "./labo_5/index.html",
         color: "green"
     }];
-
+labos.forEach((labo) => console.log(labo.number))
 //DOM elements initialization
 const laboTitle = document.querySelector(".labo-title");
 const laboNumber = document.querySelector(".labo-number");
