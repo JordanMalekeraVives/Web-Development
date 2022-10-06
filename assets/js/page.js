@@ -48,7 +48,7 @@ const setupLabo = () => {
         } else {
             laboNumber.innerText = (labos[i].number.toString() + ".");
         }
-        laboText.innerText = "This is the contents and open projects of labo " + labos[i].number.toString()
+        laboText.innerText = "This is the content and open projects of labo " + labos[i].number.toString()
         laboLink.setAttribute("href", labos[i].link);
         background.style.backgroundColor = labos[i].color;
     }, 200)
