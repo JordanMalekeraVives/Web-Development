@@ -43,6 +43,14 @@ nav ul {
     height: 4rem;
 }
 
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 section {
     display: flex;
     margin: auto;
@@ -66,17 +74,6 @@ section::-webkit-scrollbar {
 
 }
 
-.labo-title {
-    align-self: center;
-    font-size: 4rem;
-}
-
-.labo-text {
-    font-size: 10pt;
-    line-height: 1.4rem;
-    width: 10rem;
-}
-
 .right {
     display: flex;
     flex-direction: column;
@@ -88,6 +85,17 @@ section::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+}
+
+.labo-title {
+    align-self: center;
+    font-size: 4rem;
+}
+
+.labo-text {
+    font-size: 10pt;
+    line-height: 1.4rem;
+    width: 10rem;
 }
 
 .labo-link {
@@ -113,6 +121,7 @@ section::-webkit-scrollbar {
 
 .controls p {
     cursor: pointer;
+    transition: 0.3s ;
 }
 
 .controls p:hover {
