@@ -23,7 +23,7 @@
     <ul>
         <li><strong>JM</strong></li>
         <li><a href="https://github.com/JordanMalekeraVives/Web-Development" target="_blank" rel="noopener noreferrer">Github</a></li>
-        <li><a href="https://p.cygnus.cc.kuleuven.be/webapps/blackboard/content/listContent.jsp?course_id=_1114095_1&content_id=_34671062_1&mode=reset" target="_blank" rel="noopener noreferrer">Toledo</a></li>
+        <li><a href="https://p.cygnus.cc.kuleuven.be/webapps/blackboard/content/listContent.jsp?course_id=_1114095_1&amp;content_id=_34671062_1&amp;mode=reset" target="_blank" rel="noopener noreferrer">Toledo</a></li>
     </ul>
 </nav>
 <main>
@@ -37,12 +37,13 @@
         </div>
     </div>
     <div class="right">
-        <div>
+        <div class="labo-info">
             <h1 class="labo-number"></h1>
-            <p class="labo-text">
-            </p>
+            <p class="labo-text"></p>
         </div>
-        <a class="labo-link" target="_blank" rel="noopener noreferrer">Open Labo</a>
+        <div class="labo-select" onclick="displayProjects()">
+            <p class="selected-project"></p>
+        </div>
     </div>
     </section>
 </main>

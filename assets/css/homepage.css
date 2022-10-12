@@ -51,15 +51,20 @@ nav a:hover {
     color: rgba(255, 255, 255, 0.6);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem);
+    overflow: hidden;
+}
+
 section {
     display: flex;
-    margin: auto;
-    width: fit-content;
-    height: calc(100vh - 4rem);
     align-items: center;
-    justify-content: center;
-    gap: 12rem;
-    overflow: scroll;
+    justify-content: space-between;
+    flex: 0 1 40rem;
+    height: 100%;
 }
 
 section::-webkit-scrollbar {
@@ -70,25 +75,29 @@ section::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 14rem 0;
+    align-items: end;
     height: 16rem;
-
 }
 
 .right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 10rem;
+    flex: 14rem 0;
     height: 16rem;
 }
 
-.right div {
+.labo-info {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    justify-content: space-between;
+    height: 40%;
+    gap: 20%;
 }
 
 .labo-title {
-    align-self: center;
     font-size: 5rem;
 }
 
@@ -99,28 +108,46 @@ section::-webkit-scrollbar {
 .labo-text {
     font-size: 10pt;
     line-height: 1.4rem;
-    width: 10rem;
+    word-wrap: break-word;
+    width: 80%;
 }
 
-.labo-link {
+.labo-select {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 0.6rem 1rem;
     border: white 1px solid;
     border-radius: 10px;
-    padding: 1rem;
-    width: fit-content;
+    cursor: pointer;
     transition: 0.3s;
+    line-height: 2.2rem;
+    max-width: 11.8rem;
 }
 
-.labo-link:hover {
-    cursor: pointer;
-    border-color: black;
-    color: black;
-    background-color: white;
+.labo-select:hover {
+    color: rgba(255, 255, 255, 0.6) !important;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.labo-select a {
+    transition: 0.3s;
+    width: calc(100%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.labo-select a:hover {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem;
+    gap: 6rem;
 }
 
 .controls p {
@@ -130,6 +157,10 @@ section::-webkit-scrollbar {
 
 .controls p:hover {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.unavailable {
+    background-color: rgba(225, 255, 255, 0.2);
 }
 
 #particles-js {
