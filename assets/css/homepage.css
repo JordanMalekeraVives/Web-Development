@@ -42,6 +42,10 @@ nav ul {
     align-items: end;
     height: 4rem;
 }
+nav li {
+    width: 4rem;
+    text-align: center;
+}
 
 nav a {
     transition: 0.3s;
