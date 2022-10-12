@@ -4,42 +4,13 @@ const labos = [
         number: 3,
         link: "./labo_3/index.html",
         color: "black",
-        projects: [
-            {
-                name: "Contact assignment",
-                link: "./labo_3/contact/index.html"
-            },
-            {
-                name: "Homepage assignment",
-                link: "./labo_3/homepage/index.html"
-            },
-            {
-                name: "Onderwijsaanbod assignment",
-                link: "./labo_3/opleidingsaanbod/index.html"
-            },
-            {
-                name: "Opdrachten 1 - 3",
-                link: "./labo_3/opdrachten_1_2_3.html"
-            }]
+        projects: [{ name: "Contact assignment", link: "./labo_3/contact/index.html" }, { name: "Homepage assignment", link: "./labo_3/homepage/index.html" }, { name: "Onderwijsaanbod assignment", link: "./labo_3/opleidingsaanbod/index.html" }, { name: "Opdrachten 1 - 3", link: "./labo_3/opdrachten_1_2_3.html" }]
     },
     {
         number: 4,
         link: "./labo_4/index.html",
         color: "#a10218",
-        projects: [
-            {
-                name: "Opdracht 1",
-                link: "./labo_4/opdracht_1.html"
-            },
-            {
-                name: "Opdracht 2",
-                link: "./labo_4/opdracht_2.html"
-            },
-            {
-                name: "Opdracht 5",
-                link: "./labo_4/opdracht_5/index.html"
-            }
-        ]
+        projects: [{ name: "Opdracht 1", link: "./labo_4/opdracht_1.html" }, { name: "Opdracht 2", link: "./labo_4/opdracht_2.html" }, { name: "Opdracht 5", link: "./labo_4/opdracht_5/index.html" }]
     },
     {
         number: 5,
