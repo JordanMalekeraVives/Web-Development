@@ -26,14 +26,46 @@ const labos = [
         number: 4,
         link: "./labo_4/index.html",
         color: "#a10218",
-        projects: []
+        projects: [
+            {
+                name: "Opdracht 1",
+                link: "./labo_4/opdracht_1.html"
+            },
+            {
+                name: "Opdracht 2",
+                link: "./labo_4/opdracht_2.html"
+            },
+            {
+                name: "Opdracht 5",
+                link: "./labo_4/opdracht_5/index.html"
+            }
+        ]
     },
     {
         number: 5,
         link: "./labo_5/index.html",
         color: "#107201",
         projects: []
-    }];
+    },
+    {
+        number: 6,
+        link: "./labo_6/index.html",
+        color: "#034b52",
+        projects: []
+    },
+    {
+        number: 7,
+        link: "./labo_7/index.html",
+        color: "#433610",
+        projects: []
+    },
+    {
+        number: 8,
+        link: "./labo_8/index.html",
+        color: "#3f037c",
+        projects: []
+    },
+];
 
 //DOM elements initialization
 const right = document.querySelector(".right");
