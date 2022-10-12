@@ -116,16 +116,17 @@ const nextLabo = () => {
         setupLabo();
     }
 }
-
+var displayed;
 const displayProjects = () => {
     if(labos[i].projects.length != 0) {
         laboSelect.removeAttribute("onclick");
         laboSelect.style.cursor = "auto";
+        displayed = true
         animateLabo()
         
         setTimeout(() => {
-            selectedProject.style.display = "none";
             laboText.style.display = "none";
+            selectedProject.style.display = "none";
             labos[i].projects.forEach((project) => {
                 const lProject = document.createElement("a")
                 lProject.innerText = project.name
@@ -142,10 +143,13 @@ const displayProjects = () => {
 }
 
 const removeProjects = () => {
+    animateLabo()
     setTimeout(() => {
+        laboText.style.display = "block";
+        displayed = false
         document.querySelectorAll(".labo-option").forEach((option) => option.remove())
         selectedProject.style.display = "flex";
-        laboText.style.display = "block";
+        selectedProject.innerText = "Select a project";
         laboSelect.setAttribute("onclick", "displayProjects()");
         laboSelect.style.cursor = "pointer";
     }, 200)
@@ -154,5 +158,11 @@ const removeProjects = () => {
 const openLabo = () => {
     window.open(laboProjects.value, "_blank", ["noopener", "noreferrer"])
 }
+
+document.addEventListener("click", (evt) => {
+    if(laboSelect != evt.target && evt.target.tagName.toLowerCase() != "a" && displayed == true && laboSelect != document.activeElement) {
+        removeProjects()
+    }  
+})
 
 
