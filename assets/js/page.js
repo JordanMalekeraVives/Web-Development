@@ -67,8 +67,10 @@ const animateLabo = () => {
 //Setup of labo
 let i = 0
 
-const setupLabo = () => {
-    animateLabo();
+const setupLabo = (animate) => {
+    if(animate == true) {
+        animateLabo()
+    }
 
     setTimeout(() => {
         if (labos[i].number < 10) {
@@ -95,12 +97,12 @@ const prevLabo = () => {
     if(labos[i - 1] != null) {
         i--        
         removeProjects();
-        setupLabo();
+        setupLabo(true);
     }
     else {
         i = labos.length - 1
         removeProjects();
-        setupLabo();
+        setupLabo(true);
     }
 }
 
@@ -108,12 +110,12 @@ const nextLabo = () => {
     if(labos[i + 1] != null) {
         i++
         removeProjects();
-        setupLabo();
+        setupLabo(true);
     }
     else {
         i = 0
         removeProjects();
-        setupLabo();
+        setupLabo(true);
     }
 }
 var displayed;
@@ -149,7 +151,7 @@ const removeProjects = () => {
         displayed = false
         document.querySelectorAll(".labo-option").forEach((option) => option.remove())
         selectedProject.style.display = "flex";
-        selectedProject.innerText = "Select a project";
+        setupLabo();
         laboSelect.setAttribute("onclick", "displayProjects()");
         laboSelect.style.cursor = "pointer";
     }, 200)
