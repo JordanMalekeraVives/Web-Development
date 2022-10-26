@@ -1,3 +1,5 @@
+import fs from 'file-system';
+
 //All labos
 const labos = [
     {
