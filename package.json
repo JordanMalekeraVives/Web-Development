@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/JordanMalekeraVives/Web-Development#readme",
   "dependencies": {
-    "file-system": "^1.2.2"
+    "file-system": "^2.2.2"
   }
 }
