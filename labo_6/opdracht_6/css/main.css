@@ -1,0 +1,12 @@
+.checklist {
+    list-style: none;
+}
+
+li:before  {
+    content: "𐄂";
+}
+
+.checked:before {
+    content: "☑";
+
+}
