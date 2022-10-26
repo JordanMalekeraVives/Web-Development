@@ -1,3 +1,5 @@
+
+
 //All labos
 const labos = [
     {
@@ -127,6 +129,9 @@ const nextLabo = () => {
         setupLabo(true);
     }
 }
+controlPrev.addEventListener("click", prevLabo);
+controlNext.addEventListener("click", nextLabo);
+
 var displayed;
 const displayProjects = () => {
     if(labos[i].projects.length != 0) {
@@ -152,6 +157,7 @@ const displayProjects = () => {
        
     }
 }
+laboSelect.addEventListener("click", displayProjects)
 
 const removeProjects = () => {
     animateLabo([laboNumber, laboText, laboSelect, laboCurrent])
