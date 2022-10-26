@@ -11,7 +11,7 @@
     <script src="./assets/js/particles.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/onload.js" defer></script>
-    <script type="module" src="./assets/js/page.js" defer></script>
+    <script src="./assets/js/page.js" defer></script>
     <title>Web Development</title>
 </head>
 <body onload="loadfun()">
@@ -32,9 +32,9 @@
     <div class="left">
         <h1 class="labo-title">Labo</h1>
         <div class="controls">
-            <p class="control-prev">PREV</p>
+            <p class="control-prev" onclick="prevLabo()">PREV</p>
             <span/>
-            <p class="control-next">NEXT</p>
+            <p class="control-next" onclick="nextLabo()">NEXT</p>
         </div>
     </div>
     <div class="right">
@@ -45,7 +45,7 @@
             </div>
             <p class="labo-text"></p>
         </div>
-        <div class="labo-select" tabindex="-1"">
+        <div class="labo-select" tabindex="-1" onclick="displayProjects()">
             <p class="selected-project"></p>
         </div>
     </div>
