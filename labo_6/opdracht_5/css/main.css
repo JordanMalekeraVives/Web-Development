@@ -1,0 +1,8 @@
+a {
+    background-image: url("../icons/img.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    padding-left: 24px;
+    font-size: 14pt;
+}
