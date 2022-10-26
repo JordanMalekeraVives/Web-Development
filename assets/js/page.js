@@ -3,21 +3,25 @@ const labos = [
     {
         number: 3,
         color: "black",
+        current: false,
         projects: [{ name: "Contact assignment", link: "./labo_3/contact/index.html" }, { name: "Homepage assignment", link: "./labo_3/homepage/index.html" }, { name: "Onderwijsaanbod assignment", link: "./labo_3/opleidingsaanbod/index.html" }, { name: "Opdrachten 1 - 3", link: "./labo_3/opdrachten_1_2_3.html" }]
     },
     {
         number: 4,
         color: "#a10218",
+        current: false,
         projects: [{ name: "Opdracht 1", link: "./labo_4/opdracht_1.html" }, { name: "Opdracht 2", link: "./labo_4/opdracht_2.html" }, { name: "Opdracht 5", link: "./labo_4/opdracht_5/index.html" }]
     },
     {
         number: 5,
         color: "#107201",
+        current: true,
         projects: [{ name: "Opdracht 1", link: "./labo_5/opdracht_1.html" }, { name: "Opdracht 3", link: "./labo_5/opdracht_3.html" }, { name: "Opdracht 4", link: "./labo_5/opdracht_4.html" }, { name: "Opdracht 6", link: "./labo_5/opdracht_6/index.html" }, { name: "Opdracht 7", link: "./labo_5/opdracht_7.html" }]
     },
     {
         number: 6,
         color: "#034b52",
+        current: false,
         projects: []
     },
     {
@@ -28,6 +32,7 @@ const labos = [
     {
         number: 8,
         color: "#3f037c",
+        current: false,
         projects: []
     },
 ];
@@ -35,6 +40,7 @@ const labos = [
 //DOM elements initialization
 const right = document.querySelector(".right");
 const laboTitle = document.querySelector(".labo-title");
+const laboCurrent = document.querySelector(".labo-current");
 const laboNumber = document.querySelector(".labo-number");
 const laboText = document.querySelector(".labo-text");
 const laboSelect = document.querySelector(".labo-select");
@@ -47,7 +53,7 @@ const background = document.querySelector("#particles-js")
 const animateLabo = (array) => {
     if(array) {
         array.forEach((element) => {
-            element.style.animation = "fadelabo 0.4s linear";
+            element.style.animation = "fadelabo 0.4s ease-in";
         })
         background.style.animation = "fadecolor 0.4s linear";
 
@@ -61,11 +67,12 @@ const animateLabo = (array) => {
 }
 
 //Setup of labo
-let i = 0
-
+// start at labo 5
+let i = 2
+    
 const setupLabo = (animate) => {
     if(animate == true) {
-        animateLabo([laboNumber, laboText, laboSelect])
+        animateLabo([laboNumber, laboText, laboSelect, laboCurrent])
     }
 
     setTimeout(() => {
@@ -82,6 +89,12 @@ const setupLabo = (animate) => {
         else {
             selectedProject.innerText = "Not available";
             laboSelect.classList.add("unavailable");
+        }
+        if(labos[i].current == true) {
+            laboCurrent.style.display = "flex";
+        }
+        else {
+            laboCurrent.style.display = "none";
         }
         background.style.backgroundColor = labos[i].color;
     }, 200)
@@ -120,7 +133,7 @@ const displayProjects = () => {
         laboSelect.removeAttribute("onclick");
         laboSelect.style.cursor = "auto";
         displayed = true
-        animateLabo([laboNumber, laboText, laboSelect])
+        animateLabo([laboNumber, laboText, laboSelect, laboCurrent])
         
         setTimeout(() => {
             laboText.style.display = "none";
@@ -141,7 +154,7 @@ const displayProjects = () => {
 }
 
 const removeProjects = () => {
-    animateLabo([laboNumber, laboText, laboSelect])
+    animateLabo([laboNumber, laboText, laboSelect, laboCurrent])
     setTimeout(() => {
         laboText.style.display = "block";
         displayed = false

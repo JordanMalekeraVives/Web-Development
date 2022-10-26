@@ -105,6 +105,23 @@ section::-webkit-scrollbar {
     font-size: 5rem;
 }
 
+.labo-stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.labo-current {
+    font-weight: normal;
+    color: white;
+    background-color: rgba(225, 255, 255, 0.2);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.4rem;
+
+}
+
 .labo-number {
     color: rgba(255, 255, 255, 0.6);
 }
