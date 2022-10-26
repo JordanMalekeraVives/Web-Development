@@ -1,16 +1,3 @@
-import fs from "file-system";
-
-fs.readdir("../", (err, files) => {
-    if (err)
-      console.log(err);
-    else {
-      console.log("\nCurrent directory filenames:");
-      files.forEach(file => {
-        console.log(file);
-      })
-    }
-  })
-
 //All labos
 const labos = [
     {
