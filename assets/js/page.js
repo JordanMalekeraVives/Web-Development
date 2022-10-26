@@ -15,14 +15,14 @@ const labos = [
     {
         number: 5,
         color: "#107201",
-        current: true,
+        current: false,
         projects: [{ name: "Opdracht 1", link: "./labo_5/opdracht_1.html" }, { name: "Opdracht 3", link: "./labo_5/opdracht_3.html" }, { name: "Opdracht 4", link: "./labo_5/opdracht_4.html" }, { name: "Opdracht 6", link: "./labo_5/opdracht_6/index.html" }, { name: "Opdracht 7", link: "./labo_5/opdracht_7.html" }]
     },
     {
         number: 6,
         color: "#034b52",
-        current: false,
-        projects: []
+        current: true,
+        projects: [{name: "Opdracht 1", link: "./labo_6/opdracht_1/index.html"}, {name: "Opdracht 3", link: "./labo_6/opdracht_3/index.html"}, {name: "Opdracht 5", link: "./labo_6/opdracht_5/index.html"}, {name: "Opdracht 6", link: "./labo_6/opdracht_6/index.html"}]
     },
     {
         number: 7,
@@ -67,8 +67,8 @@ const animateLabo = (array) => {
 }
 
 //Setup of labo
-// start at labo 5
-let i = 2
+// start at labo 6
+let i = 3
     
 const setupLabo = (animate) => {
     if(animate == true) {
