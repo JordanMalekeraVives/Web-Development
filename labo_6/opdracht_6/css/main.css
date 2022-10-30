@@ -8,5 +8,4 @@ li:before  {
 
 .checked:before {
     content: "☑";
-
 }
