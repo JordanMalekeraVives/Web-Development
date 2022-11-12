@@ -21,12 +21,13 @@ const labos = [
     {
         number: 6,
         color: "#034b52",
-        current: true,
+        current: false,
         projects: [{name: "Opdracht 1", link: "./labo_6/opdracht_1/index.html"}, {name: "Opdracht 3", link: "./labo_6/opdracht_3/index.html"}, {name: "Opdracht 5", link: "./labo_6/opdracht_5/index.html"}, {name: "Opdracht 6", link: "./labo_6/opdracht_6/index.html"}]
     },
     {
         number: 7,
         color: "#433610",
+        current: true,
         projects: [{name: "Persoonlijke homepagina", link: "./labo_3/homepage/index.html"}, {name: "Opdracht 2", link: ".labo_7/opdracht_2/index.html"}, {name: "Opdracht 3", link: "./labo_7/opdracht_3/index.html"}, {name: "Opdracht Kalender", link: "./labo_7/opdracht_kalender/index.html"}]
     },
     {
