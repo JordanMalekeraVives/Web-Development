@@ -27,7 +27,7 @@ const labos = [
     {
         number: 7,
         color: "#433610",
-        projects: []
+        projects: [{name: "Persoonlijke homepagina", link: "./labo_3/homepage/index.html"}, {name: "Opdracht 2", link: ".labo_7/opdracht_2/index.html"}, {name: "Opdracht 3", link: "./labo_7/opdracht_3/index.html"}, {name: "Opdracht Kalender", link: "./labo_7/opdracht_kalender/index.html"}]
     },
     {
         number: 8,

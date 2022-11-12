@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+    width: 1200px;
+    font-family: Verdana, sans-serif;
+}
+
+.page-header {
+    background-image: url("../images/header.jpg");
+    color: white;
+    height: 5rem;
+}
+.page-header h1 {
+    padding: 0.2rem;
+    font-size: 28pt;
+}
+
+nav {
+    background: rgb(68 68 68);
+    padding: 0.2rem;
+}
+
+nav a {
+    color: rgb(86 255 136);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article {
+    background-color: rgb(238, 238, 238);
+    margin-top: 0.6rem;
+    padding-top: 1rem;
+}
+
+article h1 {
+    color: rgb(68 68 68);
+    font-size: 18pt;
+    text-decoration: underline;
+}
