@@ -28,7 +28,7 @@ const labos = [
         number: 7,
         color: "#433610",
         current: true,
-        projects: [{name: "Homepagina", link: "./labo_7/opdracht_homepage/index.html"}, {name: "Nature blog", link: ".labo_7/opdracht_nature_blog/index.html"}, {name: "Kalender", link: "./labo_7/opdracht_kalender/index.html"}]
+        projects: [{name: "Homepagina", link: "./labo_7/opdracht_homepage/index.html"}, {name: "Nature blog", link: "./labo_7/opdracht_nature_blog/index.html"}, {name: "Kalender", link: "./labo_7/opdracht_kalender/index.html"}]
     },
     {
         number: 8,
@@ -69,7 +69,7 @@ const animateLabo = (array) => {
 
 //Setup of labo
 // start at labo 6
-let i = 3
+let i = 4
     
 const setupLabo = (animate) => {
     if(animate == true) {
