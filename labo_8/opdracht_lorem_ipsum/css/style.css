@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+article {
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+article p {
+    margin: 0;
+    padding: 0;
+}
