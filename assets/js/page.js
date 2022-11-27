@@ -27,14 +27,14 @@ const labos = [
     {
         number: 7,
         color: "#433610",
-        current: true,
+        current: false,
         projects: [{name: "Homepagina", link: "./labo_7/opdracht_homepage/index.html"}, {name: "Nature blog", link: "./labo_7/opdracht_nature_blog/index.html"}, {name: "Kalender", link: "./labo_7/opdracht_kalender/index.html"}]
     },
     {
         number: 8,
         color: "#3f037c",
-        current: false,
-        projects: []
+        current: true,
+        projects: [{name: "Opdracht 1", link: "./labo_8/opdracht_1/index.html"}, {name: "Opdracht 2", link: "./labo_8/opdracht_2/index.html"}, {name: "Opdracht 3", link: "./labo_8/opdracht_3/index.html"}, {name: "Opdracht 4", link: "./labo_8/opdracht_4/index.html"}, {name: "Opdracht 5", link: "./labo_8/opdracht_5/index.html"}, {name: "Opdracht lorem ipsum", link: "./labo_8/opdracht_lorem_ipsum/index.html"}, {name: "Opdracht lorem ipsum extra space", link: "./labo_8/opdracht_lorem_ipsum_extra_space/index.html"}, {name: "Opdracht cocktail bar", link: "./labo_8/opdracht_cocktail_bar/index.html"}]
     },
 ];
 
@@ -69,7 +69,7 @@ const animateLabo = (array) => {
 
 //Setup of labo
 // start at labo 6
-let i = 4
+let i = labos.length - 1;
     
 const setupLabo = (animate) => {
     if(animate == true) {
