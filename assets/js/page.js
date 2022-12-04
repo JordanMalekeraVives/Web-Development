@@ -74,7 +74,7 @@ const labos = [
     },
     {
         number: 8,
-        color: "#3f037c",
+        color: "#d8aa8b",
         current: true,
         projects: [{
             name: "Opdracht positioneren",
