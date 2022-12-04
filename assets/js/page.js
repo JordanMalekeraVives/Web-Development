@@ -73,7 +73,7 @@ const labos = [
         }, {name: "Opdracht cocktail bar", link: "./labo_8/opdracht_cocktail_bar/index.html"}]
     },
     {
-        number: 8,
+        number: 9,
         color: "#d8aa8b",
         current: true,
         projects: [{
