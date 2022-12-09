@@ -82,10 +82,10 @@ const labos = [
         color: "#b1678d",
         projects: [{
             name: "Opdracht media query",
-            link: "./labo_9/opdracht_media_query/index.html"
+            link: "./labo_10/opdracht_media_query/index.html"
         }, {
             name: "Opdracht airbus",
-            link: "./labo_9/opdracht_airbus/index.html"
+            link: "./labo_10/opdracht_airbus/index.html"
         }]
     },
 ];
