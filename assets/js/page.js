@@ -3,7 +3,6 @@ const labos = [
     {
         number: 3,
         color: "black",
-        current: false,
         projects: [{name: "Contact assignment", link: "./labo_3/contact/index.html"}, {
             name: "Homepage assignment",
             link: "./labo_3/homepage/index.html"
@@ -15,7 +14,6 @@ const labos = [
     {
         number: 4,
         color: "#a10218",
-        current: false,
         projects: [{name: "Opdracht 1", link: "./labo_4/opdracht_1.html"}, {
             name: "Opdracht 2",
             link: "./labo_4/opdracht_2.html"
@@ -24,7 +22,6 @@ const labos = [
     {
         number: 5,
         color: "#107201",
-        current: false,
         projects: [{name: "Opdracht 1", link: "./labo_5/opdracht_1.html"}, {
             name: "Opdracht 3",
             link: "./labo_5/opdracht_3.html"
@@ -36,7 +33,6 @@ const labos = [
     {
         number: 6,
         color: "#034b52",
-        current: false,
         projects: [{name: "Opdracht 1", link: "./labo_6/opdracht_1/index.html"}, {
             name: "Opdracht 3",
             link: "./labo_6/opdracht_3/index.html"
@@ -48,7 +44,6 @@ const labos = [
     {
         number: 7,
         color: "#433610",
-        current: false,
         projects: [{name: "Homepagina", link: "./labo_7/opdracht_homepage/index.html"}, {
             name: "Nature blog",
             link: "./labo_7/opdracht_nature_blog/index.html"
@@ -57,7 +52,6 @@ const labos = [
     {
         number: 8,
         color: "#3f037c",
-        current: true,
         projects: [{name: "Opdracht 1", link: "./labo_8/opdracht_1/index.html"}, {
             name: "Opdracht 2",
             link: "./labo_8/opdracht_2/index.html"
@@ -74,11 +68,21 @@ const labos = [
     },
     {
         number: 9,
-        color: "#d8aa8b",
-        current: true,
+        color: "#aa6af1",
         projects: [{
             name: "Opdracht positioneren",
             link: "./labo_9/opdracht_positioneren/index.html"
+        }, {
+            name: "Opdracht airbus",
+            link: "./labo_9/opdracht_airbus/index.html"
+        }]
+    },
+    {
+        number: 10,
+        color: "#b1678d",
+        projects: [{
+            name: "Opdracht media query",
+            link: "./labo_9/opdracht_media_query/index.html"
         }, {
             name: "Opdracht airbus",
             link: "./labo_9/opdracht_airbus/index.html"
@@ -117,10 +121,11 @@ const animateLabo = (array) => {
 
 //Setup of labo
 // start at labo 6
-let i = labos.length - 1;
+const lastLabo = labos.length - 1;
+let i = lastLabo;
 
 const setupLabo = (animate) => {
-    if (animate == true) {
+    if (animate === true) {
         animateLabo([laboNumber, laboText, laboSelect, laboCurrent])
     }
 
@@ -131,14 +136,14 @@ const setupLabo = (animate) => {
             laboNumber.innerText = (labos[i].number.toString() + ".");
         }
         laboText.innerText = "This is the content and open projects of labo " + labos[i].number.toString()
-        if (labos[i].projects.length != 0) {
+        if (labos[i].projects.length !== 0) {
             selectedProject.innerText = "Select a project";
             laboSelect.classList.remove("unavailable");
         } else {
             selectedProject.innerText = "Not available";
             laboSelect.classList.add("unavailable");
         }
-        if (labos[i].current == true) {
+        if (i === lastLabo) {
             laboCurrent.style.display = "flex";
         } else {
             laboCurrent.style.display = "none";
@@ -174,7 +179,7 @@ const nextLabo = () => {
 }
 var displayed;
 const displayProjects = () => {
-    if (labos[i].projects.length != 0) {
+    if (labos[i].projects.length !== 0) {
         laboSelect.removeAttribute("onclick");
         laboSelect.style.cursor = "auto";
         displayed = true
@@ -218,7 +223,7 @@ const openLabo = () => {
 }
 
 document.addEventListener("click", (evt) => {
-    if (laboSelect != evt.target && evt.target.tagName.toLowerCase() != "a" && displayed == true && laboSelect != document.activeElement) {
+    if (laboSelect !== evt.target && evt.target.tagName.toLowerCase() !== "a" && displayed === true && laboSelect !== document.activeElement) {
         removeProjects()
     }
 })
