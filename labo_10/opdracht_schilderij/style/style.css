@@ -42,4 +42,7 @@
 
 #g {
     border: solid black;
+    border-width: 12.5px 0 0 7.5px;
+    min-height: 75px;
+    background-color: rgb(242, 224, 122);
 }
