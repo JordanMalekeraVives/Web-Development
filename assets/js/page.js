@@ -84,8 +84,17 @@ const labos = [
             name: "Opdracht media query",
             link: "./labo_10/opdracht_media_query/index.html"
         }, {
-            name: "Opdracht airbus",
-            link: "./labo_10/opdracht_airbus/index.html"
+            name: "Opdracht bootstrap 1",
+            link: "./labo_10/opdracht_bootstrap_oef1/index.html"
+        }, {
+            name: "Opdracht bootstrap 2",
+            link: "./labo_10/opdracht_bootstrap_oef2/index.html"
+        }, {
+            name: "Opdracht schilderij",
+            link: "./labo_10/opdracht_schilderij/index.html"
+        }, {
+            name: "Opdracht homepage",
+            link: "./labo_10/opdracht_homepage/index.html"
         }]
     },
 ];
