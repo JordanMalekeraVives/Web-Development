@@ -1,0 +1,20 @@
+body {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: auto;
+}
+
+.row div {
+    height: 12rem;
+    margin-bottom: 1rem;
+}
+
+.row div:nth-child(even) {
+    background-color: #ABB1B8;
+}
+
+.row div:nth-child(odd) {
+    background-color: #DBDFE5;
+}

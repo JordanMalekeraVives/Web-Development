@@ -1,0 +1,23 @@
+body {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: auto;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+.row div {
+    height: 12rem;
+}
+
+.row div:nth-child(2) {
+    background-color: #ABB1B8;
+}
+
+.row div:nth-child(1), .row div:nth-child(3) {
+    background-color: #DBDFE5;
+}
