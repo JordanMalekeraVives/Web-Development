@@ -97,6 +97,32 @@ const labos = [
             link: "./labo_10/opdracht_homepage/index.html"
         }]
     },
+    {
+        number: 11,
+        color: "#1c17e6",
+        projects: [{
+            name: "Opdracht 1",
+            link: "./labo_11/opdracht_1.html"
+        }, {
+            name: "Opdracht 2",
+            link: "./labo_11/opdracht_2.html"
+        }, {
+            name: "Opdracht 3",
+            link: "./labo_11/opdracht_3.html"
+        }, {
+            name: "Opdracht 4",
+            link: "./labo_11/opdracht_4.html"
+        }, {
+            name: "Opdracht 5",
+            link: "./labo_11/opdracht_5.html"
+        }, {
+            name: "Opdracht 6",
+            link: "./labo_11/opdracht_6.html"
+        }, {
+            name: "Opdracht extra",
+            link: "./labo_11/opdracht_extra/index.html"
+        }]
+    },
 ];
 
 //DOM elements initialization
