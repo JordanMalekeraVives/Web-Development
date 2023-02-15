@@ -123,6 +123,14 @@ const labos = [
             link: "./labo_11/opdracht_extra/index.html"
         }]
     },
+    {
+        number: 12,
+        color: "#d75268",
+        projects: [{
+            name: "Opdracht rekenmachine",
+            link: "./labo_12/opdracht_rekenmachine.html"
+        }]
+    },
 ];
 
 //DOM elements initialization
