@@ -128,7 +128,7 @@ const labos = [
         color: "#d75268",
         projects: [{
             name: "Opdracht rekenmachine",
-            link: "./labo_12/opdracht_rekenmachine.html"
+            link: "./labo_12/opdracht_rekenmachine/index.html"
         }]
     },
 ];
