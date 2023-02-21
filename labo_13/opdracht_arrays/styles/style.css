@@ -1,0 +1,12 @@
+.familie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+    font-size: 20pt;
+}
+
+.familie p {
+    display: flex;
+    flex-direction: column;
+}
