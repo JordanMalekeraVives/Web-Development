@@ -157,6 +157,23 @@ const labos = [
             link: "./labo_13/opdracht_substring/index.html"
         }]
     },
+    {
+        number: 15,
+        color: "#d75268",
+        projects: [{
+            name: "Opdracht Invulformulier",
+            link: "./labo_15/opdracht_invulformulier/index.html"
+        }, {
+            name: "Opdracht Man van an",
+            link: "./labo_15/opdracht_man_van_an/index.html"
+        }, {
+            name: "Opdracht Spaties",
+            link: "./labo_15/opdracht_spaties/index.html"
+        }, {
+            name: "Opdracht Strings",
+            link: "./labo_15/opdracht_strings/index.html"
+        }]
+    },
 ];
 
 //DOM elements initialization
