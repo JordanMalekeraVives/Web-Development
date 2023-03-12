@@ -7,7 +7,6 @@ const maakMetSpaties = () => {
     let text = document.querySelector("#txtInput").value;
     let text2 = text.replace(/\s+/g, '');
     let arrText = text2.split("");
-    console.log(arrText)
     console.log(arrText.join(" "));
 }
 
