@@ -3,11 +3,43 @@
 <head>
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
-    <title>Opdracht Opdelen</title>
+    <title>Opdracht Formwaarden</title>
 </head>
 <body>
-<input type="text" name="txtInput" id="txtInput" placeholder="uw text...">
-<p id="txtOutput"></p>
+<label for="chkRoker">is roker</label>
+<input type="checkbox" name="chkRoker" id="chkRoker">
+<br>
+<label for="rdbNederlands">Moedertaal</label>
+
+<input type="radio" name="rdbTaal" id="rdbNederlands">
+<label for="rdbNederlands">Nederlands</label>
+
+<input type="radio" name="rdbTaal" id="rdbFrans">
+<label for="rdbFrans">Frans</label>
+
+<input type="radio" name="rdbTaal" id="rdbEngels">
+<label for="rdbEngels">Engels</label>
+<br>
+
+<label for="sltLand">Favoriete buurland</label>
+<select name="buurland" id="sltLand">
+    <option value="Nederland">Nederland</option>
+    <option value="Frankrijk">Frankrijk</option>
+    <option value="Duitsland">Duitsland</option>
+</select>
+<br>
+
+<label for="sltBestelling">Bestelling</label>
+<select name="best" id="sltBestelling">
+    <option value="aardappelen">Aardappelen</option>
+    <option value="Melk">Melk</option>
+    <option value="Biefstuk">Biefstuk</option>
+    <option value="Chips">Chips</option>
+    <option value="Krant">Krant</option>
+</select>
+<br>
+
+<input type="button" id="btnResult" name="btnResult" value="Toon resultaat">
 <script src="./js/script.js"></script>
 </body>
 </html>
