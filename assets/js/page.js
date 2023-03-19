@@ -180,7 +180,7 @@ const labos = [
             link: "./labo_16/opdracht_trigrams/index.html"
         }, {
             name: "Opdracht De en het",
-            link: "./labo_15/opdracht_de_en_het/index.html"
+            link: "./labo_16/opdracht_de_en_het/index.html"
         }, {
             name: "Opdracht Gemeenten",
             link: "./labo_16/opdracht_gemeente/index.html"
