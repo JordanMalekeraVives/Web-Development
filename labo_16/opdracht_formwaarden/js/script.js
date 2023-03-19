@@ -1,18 +1,13 @@
 const setup = () => {
-    let text = document.querySelector("#txtInput");
-    text.addEventListener("input", opdeler);
+    let btn = document.querySelector("#btnResult");
+    btn.addEventListener("click", logger);
 }
 
-const opdeler = () => {
-    let text = document.querySelector("#txtInput");
-    const output = document.querySelector("#txtOutput");
-    const string = text.value;
-    let result = "";
-    for (let i = 0; i < string.length; i++) {
-        if (string.slice(i, i + 3).length === 3) {
-            result += string.slice(i, i + 3) + "\n";
-        }
-    }
-    output.innerHTML = result;
+const logger = () => {
+    let roker = document.querySelector("#chkRoker").checked
+    let conRoker = (roker) ? "Is een roker." : "Is geen roker."
+    console.log(conRoker);
+
+
 }
 window.addEventListener("load", setup);
