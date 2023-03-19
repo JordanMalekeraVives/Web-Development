@@ -156,8 +156,7 @@ const labos = [
             name: "Opdracht substring",
             link: "./labo_13/opdracht_substring/index.html"
         }]
-    },
-    {
+    }, {
         number: 15,
         color: "#d75268",
         projects: [{
@@ -172,6 +171,25 @@ const labos = [
         }, {
             name: "Opdracht Strings",
             link: "./labo_15/opdracht_strings/index.html"
+        }]
+    }, {
+        number: 16,
+        color: "#f84061",
+        projects: [{
+            name: "Opdracht Trigrams",
+            link: "./labo_16/opdracht_trigrams/index.html"
+        }, {
+            name: "Opdracht De en het",
+            link: "./labo_15/opdracht_de_en_het/index.html"
+        }, {
+            name: "Opdracht Gemeenten",
+            link: "./labo_16/opdracht_gemeente/index.html"
+        }, {
+            name: "Opdracht Formwaarden",
+            link: "./labo_16/opdracht_formwaarden/index.html"
+        }, {
+            name: "Opdracht Formvalidatie",
+            link: "./labo_16/opdracht_formvalidatie/index.html"
         }]
     },
 ];
