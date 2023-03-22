@@ -1,6 +1,6 @@
 const setup = () => {
     addStyle();
-    addImmage();
+    addImage();
 
 }
 
@@ -14,7 +14,7 @@ const addStyle = () => {
     head.appendChild(style);
 }
 
-const addImmage = () => {
+const addImage = () => {
     let body = document.querySelector("body");
     let img = document.createElement("img");
     img.setAttribute("src", "./images/calendar.jpg");
