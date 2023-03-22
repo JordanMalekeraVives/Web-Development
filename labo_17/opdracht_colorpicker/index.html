@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Opdracht Colorpicker</title>
+</head>
+<body>
+<main>
+    <div class="colorPicker">
+        0<input type="range" name="Red" id="sldRed" class="sldColor" min="0" max="255">255
+        <label for="sldRed" id="lblRed">0</label>
+        <br>
+        0<input type="range" name="Green" id="sldGreen" class="sldColor" min="0" max="255" value="0">255
+        <label for="sldGreen" id="lblGreen">0</label>
+        <br>
+        0<input type="range" name="Blue" id="sldBlue" class="sldColor" min="0" max="255" value="0">255
+        <label for="sldBlue" id="lblBlue">0</label>
+    </div>
+    <div class="showColor"></div>
+    <button id="btnSave">Save</button>
+</main>
+<div class="savedColors"></div>
+<script src="./js/script.js"></script>
+</body>
+</html>

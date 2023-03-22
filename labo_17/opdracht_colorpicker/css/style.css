@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.colorPicker {
+    width: 17em;
+}
+
+.showColor {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    margin-left: 2em;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.newColor {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.colorRemover {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: white;
+    align-self: start;
+    margin: 0;
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.savedColors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+button {
+    height: 20px;
+    margin-left: 1em;
+    align-self: end;
+}
+

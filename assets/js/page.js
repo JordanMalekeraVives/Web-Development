@@ -191,6 +191,22 @@ const labos = [
             name: "Opdracht Formvalidatie",
             link: "./labo_16/opdracht_formvalidatie/index.html"
         }]
+    }, {
+        number: 17,
+        color: "#D84761",
+        projects: [{
+            name: "Opdracht Colorpicker",
+            link: "./labo_17/opdracht_colorpicker/index.html"
+        }, {
+            name: "Opdracht Nodes 1",
+            link: "./labo_17/opdracht_extra_nodes/opdracht_1/index.html"
+        }, {
+            name: "Opdracht Nodes 2",
+            link: "./labo_17/opdracht_extra_nodes/opdracht_2/index.html"
+        }, {
+            name: "Opdracht Nodes 3",
+            link: "./labo_17/opdracht_extra_nodes/opdracht_3/index.html"
+        }]
     },
 ];
 
