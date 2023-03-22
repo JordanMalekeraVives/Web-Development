@@ -25,6 +25,7 @@ const addColor = () => {
     const savedColors = document.querySelector(".savedColors")
     const newColor = document.createElement("div");
     const colorRemover = document.createElement("button");
+    const sldColor = document.querySelectorAll(".sldColor");
 
     colorRemover.textContent = "X";
     colorRemover.classList.add("colorRemover");
@@ -34,13 +35,24 @@ const addColor = () => {
     newColor.style.backgroundColor = colorShow.style.backgroundColor;
     newColor.addEventListener("click", updateColor)
     newColor.insertAdjacentElement("beforeend", colorRemover);
+    newColor.setAttribute("data-red", sldColor[0].value)
+    newColor.setAttribute("data-green", sldColor[1].value)
+    newColor.setAttribute("data-blue", sldColor[2].value)
 
     savedColors.insertAdjacentElement("beforeend", newColor);
 }
 
 const updateColor = (event) => {
     const colorShow = document.querySelector(".showColor");
+    const sldColor = document.querySelectorAll(".sldColor");
     colorShow.style.backgroundColor = event.target.style.backgroundColor;
+    sldColor[0].value = event.target.attributes[2].value;
+    sldColor[1].value = event.target.attributes[3].value;
+    sldColor[2].value = event.target.attributes[4].value;
+    sldColor[0].labels[0].textContent = "Red: " + event.target.attributes[2].value;
+    sldColor[1].labels[0].textContent = "Green: " + event.target.attributes[3].value;
+    sldColor[2].labels[0].textContent = "Blue: " + event.target.attributes[4].value;
+    console.log(event.target.attributes)
 }
 
 const removeColor = (event) => {
