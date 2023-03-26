@@ -43,21 +43,21 @@ const addColor = () => {
 }
 
 const updateColor = (event) => {
-    const colorShow = document.querySelector(".showColor");
-    const sldColor = document.querySelectorAll(".sldColor");
-    colorShow.style.backgroundColor = event.target.style.backgroundColor;
-    sldColor[0].value = event.target.attributes[2].value;
-    sldColor[1].value = event.target.attributes[3].value;
-    sldColor[2].value = event.target.attributes[4].value;
-    sldColor[0].labels[0].textContent = "Red: " + event.target.attributes[2].value;
-    sldColor[1].labels[0].textContent = "Green: " + event.target.attributes[3].value;
-    sldColor[2].labels[0].textContent = "Blue: " + event.target.attributes[4].value;
-    console.log(event.target.attributes)
+    if (event.target.tagName === "DIV") {
+        const colorShow = document.querySelector(".showColor");
+        const sldColor = document.querySelectorAll(".sldColor");
+        colorShow.style.backgroundColor = event.target.style.backgroundColor;
+        sldColor[0].value = event.target.attributes[2].value;
+        sldColor[1].value = event.target.attributes[3].value;
+        sldColor[2].value = event.target.attributes[4].value;
+        sldColor[0].labels[0].textContent = "Red: " + event.target.attributes[2].value;
+        sldColor[1].labels[0].textContent = "Green: " + event.target.attributes[3].value;
+        sldColor[2].labels[0].textContent = "Blue: " + event.target.attributes[4].value;
+    }
 }
 
 const removeColor = (event) => {
-    console.log(event.target);
     event.target.parentElement.remove();
-
 }
+
 window.addEventListener("load", setup);
