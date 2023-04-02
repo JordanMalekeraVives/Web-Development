@@ -226,6 +226,13 @@ const labos = [
             name: "Opdracht Nodes 3",
             link: "./labo_17/opdracht_extra_nodes/opdracht_3/index.html"
         }]
+    }, {
+        number: 18,
+        color: "#T83461",
+        projects: [{
+            name: "Opdracht Memorizer",
+            link: "./labo_18/opdracht_memorizer/index.html"
+        }]
     },
 ];
 
