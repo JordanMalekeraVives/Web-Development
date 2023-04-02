@@ -1,22 +1,3 @@
-const fs = require('fs')
-
-// directory path
-const dir = './node_modules/'
-
-// list all files in the directory
-try {
-    const files = fs.readdirSync(dir)
-
-    // files object contains all files names
-    // log them on console
-    files.forEach(file => {
-        console.log(file)
-    })
-} catch (err) {
-    console.log(err)
-}
-
-
 //All labos
 const labos = [
     {
