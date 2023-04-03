@@ -5,12 +5,14 @@ const global = {
     IMAGE_PATH_PREFIX: "images/kaart",
     IMAGE_PATH_SUFFIX: ".png",
     currentSelected: [],
-    foundCards: 0
+    foundCards: 0,
+    flipSound: new Audio("./sound/card_flip.mp3")
 }
 
 const setup = () => {
     initCards();
     initCards();
+
 }
 
 const initCards = () => {
@@ -62,6 +64,8 @@ const hideCover = (cardCover) => {
             global.currentSelected.push(cardCover);
         }
         global.foundCards++;
+
+        global.flipSound.play();
 }
 
 const showCover = (cardCover) => {

@@ -211,6 +211,9 @@ const labos = [
         number: 18,
         color: "#T83461",
         projects: [{
+            name: "Opdracht Hit An Object",
+            link: "./labo_18/opdracht_hit_an_object/index.html"
+        }, {
             name: "Opdracht Memorizer",
             link: "./labo_18/opdracht_memorizer/index.html"
         }]
