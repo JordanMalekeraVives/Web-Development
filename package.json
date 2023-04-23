@@ -17,6 +17,7 @@
   "homepage": "https://github.com/JordanMalekeraVives/Web-Development#readme",
   "description": "",
   "dependencies": {
+    "prettier": "^2.8.7",
     "sass": "^1.60.0"
   }
 }
