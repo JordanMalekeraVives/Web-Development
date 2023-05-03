@@ -363,6 +363,16 @@ const labos = [
                 link: "./labo_19/opdracht_contact_manager/index.html"
             }
         ]
+    },
+    {
+        number: 20,
+        color: "#56737d",
+        projects: [
+            {
+                name: "Opdracht Colorpicker",
+                link: "./labo_20/opdracht_colorpicker_storage/index.html"
+            }
+        ]
     }
 ]
 //DOM elements initialization
