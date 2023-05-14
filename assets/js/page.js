@@ -373,6 +373,16 @@ const labos = [
                 link: "./labo_20/opdracht_colorpicker_storage/index.html"
             }
         ]
+    },
+    {
+        number: 21,
+        color: "#6779fd",
+        projects: [
+            {
+                name: "Opdracht Startpage",
+                link: "./labo_21/opdracht_internet_startpage/index.html"
+            }
+        ]
     }
 ]
 //DOM elements initialization
